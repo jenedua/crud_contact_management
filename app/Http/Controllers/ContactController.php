@@ -51,6 +51,7 @@ class ContactController extends Controller
      */
     public function show(Contact $contact)
     {
+        echo "<pre>";
         var_dump($contact);
     }
 
