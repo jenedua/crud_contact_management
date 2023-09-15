@@ -8,7 +8,7 @@
 <ul>
     @foreach($contacts as $contact)
     <li>
-        {{ $contact-> Name}} | <a href="{{route ('contacts.edit', ['contact' => $contact->id])}}">Edit</a> | <a href="">Delete</a> <a href="">Show</a>
+        {{ $contact-> Name}} | <a href="{{route ('contacts.edit', ['contact' => $contact->id])}}">Edit</a> | <a href="">Delete</a> <a href="{{ route('contacts.show', ['contact' => $contact->id])}}">Show</a>
     </li>
 
     @endforeach
